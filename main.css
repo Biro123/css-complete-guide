@@ -1,0 +1,44 @@
+/* Appllies to all sctoin html tags */
+/* section {
+  background: #ff468f;
+} */
+
+/*  universal selector to override inheritance and apply to all elements that don't have box-sizing set 
+     box-sizing: border-box will include padding and border in the element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Glass Antiqua", cursive;
+  margin: 0;
+}
+
+#product-overview {
+  background: #486e0b;
+  width: 100%;
+  height:328px;
+  padding: 10px;
+}
+
+/* applies to all h1 tags inside a product-overview id */
+#product-overview h1 {
+  color: white;
+  font-family: "Aubrey", system-ui;  
+}
+
+.section-title {
+  color: rgb(135, 202, 126);
+}
+
+.aubrey-regular {
+  font-family: "Aubrey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.glass-antiqua-regular {
+  font-family: "Glass Antiqua", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
