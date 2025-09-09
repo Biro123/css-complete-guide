@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Glass Antiqua", cursive;
+  font-family: "Aurbrey", system-ui;
   margin: 0;
 }
 
@@ -30,6 +30,50 @@ body {
 .section-title {
   color: rgb(135, 202, 126);
 }
+
+.main-header {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: rgb(22, 172, 122);  
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: rgb(235, 207, 87);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width:calc(100% - 75px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;  
+  margin: 0 8px;
+}
+
+.main-nav__item a {
+  color: rgb(235, 207, 87);
+  text-decoration: none;
+}
+
+
+
 
 .aubrey-regular {
   font-family: "Aubrey", system-ui;
