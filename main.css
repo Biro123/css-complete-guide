@@ -77,6 +77,22 @@ body {
   border-bottom: 3px solid white;
 }
 
+/* These will override settings in the previous rules simply because 
+/* they comes after them in the css file */
+.main-nav__item--cta a {
+  color: white;
+  background: rgb(161, 5, 5);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  background: white;
+  color: rgb(161, 5, 5);
+  border: none;
+}
+
+
 
 
 .aubrey-regular {
