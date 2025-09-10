@@ -28,7 +28,18 @@ body {
 }
 
 .section-title {
-  color: rgb(135, 202, 126);
+  color: rgb(22, 172, 122);
+  text-align: center;
+}
+
+.plan {
+  background-color: aquamarine;
+  text-align: center;
+  padding: 12px;
+  margin: 8px;
+  display: inline-block;
+  width: calc(33% - 16px);
+  vertical-align: middle;
 }
 
 .main-header {
