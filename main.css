@@ -15,7 +15,7 @@ body {
 }
 
 #product-overview {
-  background: #486e0b;
+  background: url(Dog.jpg);
   width: 100%;
   height:328px;
   padding: 10px;
