@@ -59,7 +59,7 @@ body {
 .plan__title {
   font-size: 32px;
   margin: 8px 0;
-  color: rgb(158, 107, 12);
+  color: chocolate;
 }
 
 .plan__price {
@@ -67,7 +67,8 @@ body {
 }
 
 .plan--highlighted .plan__title {
-  color: rgb(236, 211, 98);
+  color: rgb(241, 217, 81);
+  /* color: rgb(236, 211, 98); */
 }
 
 .plan--highlighted .plan__price {
@@ -83,6 +84,26 @@ body {
 .plan__features li {
   margin: 8px;
 }
+
+.button {
+  background-color: chocolate;
+  color: white;
+  font: inherit; /* inherit from parent (body) rather than use default browser-supplied setting */
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid chocolate;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  color: chocolate;
+  background-color: white;
+}
+
+
+/* Start of header and navbar styles */
 
 .main-header {
   width: 100%;
