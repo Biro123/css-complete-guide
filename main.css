@@ -102,9 +102,51 @@ body {
   background-color: white;
 }
 
+/* Start of key features section */
+#key-features {
+  background-color: rgb(158, 1, 48);
+  margin-top: 80px;
+  padding: 16px 0;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+.key-features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;  
+}
+
+.key-features__list li {
+  color: white;
+  display: inline-block;
+  width: calc(33% - 16px);
+  margin: 8px;
+  vertical-align: top;
+}
+
+.key-feature__image {
+  background: wheat;
+  width: 128px;
+  height: 128px;
+  border: 2px solid darkslategrey;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.key-feature__description {
+  font-size: 18px;
+  color: aqua;
+  text-align: center;
+  font-weight: bold;
+}
+
 
 /* Start of header and navbar styles */
-
 .main-header {
   width: 100%;
   padding: 8px 16px;
