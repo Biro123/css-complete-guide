@@ -1,0 +1,121 @@
+
+/*  universal selector to override inheritance and apply to all elements that don't have box-sizing set 
+     box-sizing: border-box will include padding and border in the element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+}
+
+/* Start of header and navbar styles */
+.main-header {
+  width: 100%;
+  padding: 8px 16px;
+  background-color: rgb(22, 172, 122);  
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main-header__brand {
+  color: rgb(236, 211, 98);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width:calc(100% - 85px);
+  vertical-align: middle;
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: inline-block;  
+  margin: 0 8px;
+}
+.main-nav__item a {
+  color: rgb(235, 207, 87);
+  text-decoration: none;
+  padding-bottom: 2px;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+/* These will override settings in the previous rules simply because 
+/* they comes after them in the css file */
+.main-nav__item--cta a {
+  color: white;
+  background: rgb(161, 5, 5);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  background: white;
+  color: rgb(161, 5, 5);
+  border: none;
+}
+
+
+/* Start of footer styles */
+.main-footer {
+  background-color: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: cadetblue;
+}
+
+/* Common styles */
+.button {
+  background-color: chocolate;
+  color: white;
+  font: inherit; /* inherit from parent (body) rather than use default browser-supplied setting */
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid chocolate;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  color: chocolate;
+  background-color: white;
+}
