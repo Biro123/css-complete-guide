@@ -3,7 +3,6 @@ main {
 }
 
 .package {
-  /* background: darkseagreen; */
   border: 4px solid rgb(2, 88, 60);  
   border-left: none;
   margin: 16px 0;
@@ -24,18 +23,29 @@ main {
   padding: 32px;
 }
 
+/* hack for clearing floats */
+.clearfix {
+  clear:both;
+}
+
 #plus {
-  /* font-weight: bold; */
   background: aquamarine;
 }
 
 #free {
-  /* font-weight: bold; */
   background: lightblue;
+  float: right;
+  border-right: none;
+  border-left: 4px solid rgb(2, 88, 60);
+  text-align: right;
+}
+
+#free:hover,
+#free:active {
+  border-left-color: orangered;
 }
 
 #premium {
-  /* font-weight: bold; */
   background: rgb(8, 131, 131);
 }
 #premium h1 {
