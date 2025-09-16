@@ -29,6 +29,18 @@ main {
   color: inherit;
   display: block;
   padding: 32px;
+  position: relative; /* keeps element within document flow but allows positional children to anchor to it  */
+}
+
+.package__badge {
+  position: absolute; /* positions within nearest parent with position attribute */
+  top: 0;
+  right: 0px;
+  margin:20px;
+  font-size: 12px;
+  color: white;
+  background: orangered;
+  padding: 8px;
 }
 
 /* hack for clearing floats */
