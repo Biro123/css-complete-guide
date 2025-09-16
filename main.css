@@ -4,12 +4,17 @@
   width: 100%;
   height:328px;
   padding: 10px;
+  margin-top: 46px;
+  position: relative;
 }
 
 /* applies to all h1 tags inside a product-overview id */
 #product-overview h1 {
   color: white;
-  font-family: "Aubrey", system-ui;  
+  font-family: "Aubrey", system-ui;
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
 }
 
 .section-title {
