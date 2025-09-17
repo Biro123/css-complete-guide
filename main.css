@@ -1,9 +1,13 @@
 
 #product-overview {
+  background: url(Dog.jpg) center 10%/cover no-repeat border-box;
+  /* above applies same settings as commented out below  
   background-image: url(Dog.jpg);
-  background-size: cover;
   background-position: center 10%;
+  background-size: cover;  
   background-repeat: no-repeat;
+  background-origin: border-box;
+  background-clip: border-box; */
   width: 100%;
   height:328px;
   padding: 10px;
