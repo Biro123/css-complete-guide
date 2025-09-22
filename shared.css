@@ -191,3 +191,7 @@ body {
   color: chocolate;
   background-color: white;
 }
+
+.open {
+  display: block !important;
+}
