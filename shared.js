@@ -11,7 +11,7 @@ var mobileNav = document.querySelector('.mobile-nav');
 function closeModal() {
   // backdrop.style.display = 'none';
   // modal.style.display = 'none';
-  modal.classList.remove('open');
+  modal?.classList.remove('open');
   backdrop.classList.remove('open');
 }
 
@@ -30,7 +30,8 @@ backdrop.addEventListener('click', () => {
   closeModal();
 });
 
-modalCloseButton.addEventListener('click', closeModal);
+modalCloseButton?.addEventListener('click', closeModal);
+
 toggleButton.addEventListener('click', () => {
   // mobileNav.style.display = 'block';
   // backdrop.style.display = 'block';
