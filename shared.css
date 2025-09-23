@@ -1,4 +1,3 @@
-
 /*  universal selector to override inheritance and apply to all elements that don't have box-sizing set 
      box-sizing: border-box will include padding and border in the element's total width and height */
 * {
@@ -16,10 +15,10 @@ body {
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
-} 
+}
 
 /* Start of header and navbar styles */
 .main-header {
@@ -32,7 +31,7 @@ body {
   z-index: 1;
 }
 
-.main-header > div {
+.main-header>div {
   display: inline-block;
   vertical-align: middle;
 }
@@ -68,10 +67,7 @@ body {
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width:calc(100% - 8rem);
-  vertical-align: middle;
+  display: none;
 }
 
 .main-nav__items {
@@ -81,15 +77,17 @@ body {
 }
 
 .main-nav__item {
-  display: inline-block;  
+  display: inline-block;
   margin: 0 0.5rem;
 }
-.main-nav__item a, 
+
+.main-nav__item a,
 .mobile-nav__item a {
   color: rgb(235, 207, 87);
   text-decoration: none;
   padding-bottom: 2px;
 }
+
 .main-nav__item a:hover,
 .main-nav__item a:active {
   color: white;
@@ -105,6 +103,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
 }
+
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
@@ -130,8 +129,7 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+  margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -178,7 +176,8 @@ body {
 .button {
   background-color: chocolate;
   color: white;
-  font: inherit; /* inherit from parent (body) rather than use default browser-supplied setting */
+  font: inherit;
+  /* inherit from parent (body) rather than use default browser-supplied setting */
   font-weight: bold;
   border-radius: 0.5rem;
   padding: 0.5rem;
@@ -194,4 +193,22 @@ body {
 
 .open {
   display: block !important;
+}
+
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 5rem);
+    vertical-align: middle;
+  }
+
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }
