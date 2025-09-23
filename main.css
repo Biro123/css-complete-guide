@@ -9,7 +9,7 @@
   background-origin: border-box;
   background-clip: border-box; */
   width: 100vw;
-  height: 33vh;
+  height: 20vh;
   padding: 0.6rem;
   margin-top: 2.8rem;
   position: relative;
@@ -22,6 +22,7 @@
   position: absolute;
   left: 4%;
   bottom: 4%;
+  font-size: 1.6rem;
 }
 
 .section-title {
@@ -182,4 +183,25 @@
 .modal__action--negative:active {
   background: orangered;
   border-color: orangered;
+}
+
+
+/* media properties apply while the condition is true (ie. with is > min-width)   */
+/* NB. multiple queries on the same criteria must be coded in the correct order */
+@media (min-width: 40rem) {
+  #product-overview {
+    height: 33vh;
+  }
+  #product-overview h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 60rem) {
+  #product-overview {
+    height: 40vh;
+  }
+  #product-overview h1 {
+    font-size: 3rem;
+  }
 }
