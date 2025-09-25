@@ -31,6 +31,21 @@ main {
   width: auto;
 }
 
+.signup-form input,
+.signup-form select {
+  border: 1px solid #ccc;
+  padding: 0.2rem;
+  font: inherit;  /* don't use default 'input' font*/
+  border-radius: 0.3rem;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+  outline: none;
+  background: #f4fdf6;
+  border-color: rgb(22, 172, 122);  
+}
+
 .signup-form button[type="submit"] {
   display: block;
   margin-top: 1rem;
