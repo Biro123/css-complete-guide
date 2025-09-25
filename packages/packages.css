@@ -87,6 +87,7 @@
   border: 2px solid darkslategrey;
   font-size: 1.2rem;
   color: darkslategrey;
+  font-family: "Noto Sans Display", sans-serif;
 }
 
 @media (min-width: 40rem) {
