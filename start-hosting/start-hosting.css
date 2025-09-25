@@ -44,7 +44,7 @@ main {
 .signup-form select:focus {
   outline: none;
   background: #f4fdf6;
-  border-color: rgb(22, 172, 122);  
+  border-color: rgb(22, 172, 122);
 }
 
 .signup-form input[type="checkbox"] {
@@ -63,6 +63,13 @@ main {
   border: rgb(22, 172, 122); 
   background: #f4fdf6; 
 } */
+
+.signup-form input.invalid,
+.signup-form select.invalid,
+.signup-form :invalid {
+  border-color: red !important;
+  background: #fbdada;
+}
 
 .signup-form button[type="submit"] {
   display: block;
