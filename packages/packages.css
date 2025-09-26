@@ -84,12 +84,13 @@
 .package__details {
   background: white;
   padding: 1rem;
-  border: 2px solid darkslategrey;
-  font-size: 1.2rem;
+  border: 2px solid darkslategrey;  
   color: darkslategrey;
-  font-family: "Noto Sans Display", sans-serif;
-  font-weight: 800;
-  font-style: italic;
+  /* font-size: 1.2rem; */
+  /* font-family: "Noto Sans Display", sans-serif; */
+  /* font-weight: 800; */
+  /* font-style: italic; */
+  font: italic 800 1.2rem "Noto Sans Display", sans-serif;
 }
 
 @media (min-width: 40rem) {
