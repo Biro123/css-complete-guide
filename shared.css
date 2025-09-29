@@ -37,11 +37,9 @@ main {
   padding: 0.5rem 1rem;
   background-color: rgb(22, 172, 122);
   z-index: 1;
-}
-
-.main-header>div {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .toggle-button {
@@ -82,10 +80,11 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .main-nav__item {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0 0.5rem;
 }
 
@@ -215,9 +214,6 @@ main {
 
   .main-nav {
     display: inline-block;
-    text-align: right;
-    width: calc(100% - 5rem);
-    vertical-align: middle;
   }
 
   .main-footer__link {
